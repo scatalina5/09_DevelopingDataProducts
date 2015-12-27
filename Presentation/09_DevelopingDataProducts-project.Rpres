@@ -1,0 +1,52 @@
+Developing Data Products - Course Project
+=====================
+author: Peter Seidel  
+date: `r date()`  
+transition: rotate
+
+MTCARS Explorer Application
+=====================
+type: sub-section
+A **shiny** app was created to explorer some of the variables in the **mtcars** R dataset.
+https://scatalina5.shinyapps.io/09_DevelopingDataProducts
+
+The application does the following:
+- Allows you to select specific ranges or values for some of the mtcars variables.
+- Calculates the mean weight & MPG for the selected data.
+- Plots weight vs MPG for the selected observations.
+- Creates a table listing the variables for the selected data.
+
+
+MTCARS Dataset
+=====================
+type: sub-section
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).  
+A data frame with 32 observations on 11 variables.  
+```{r}
+library(datasets)
+data(mtcars)
+head(mtcars,1)
+```
+
+Example Calculations
+=====================
+type: sub-section
+The following calculations were performed on all 32 observations in the mtcars dataset.  Using the **MTCARS Explorer Application**, you can customize which observations are included in the mean calculations.
+```{r}
+mean(mtcars$wt)*1000
+mean(mtcars$mpg)
+```
+
+Example Plot
+=====================
+type: sub-section
+```{r, echo=FALSE}
+library(ggplot2)
+title <- paste("MTCARS DataSet")
+g <- ggplot(data = mtcars, aes(y = mpg, x = wt,))
+g <- g + geom_point(size = 4)
+g <- g + labs(x = "Weight (lbs/1000)") + labs(y = "Miles per (US) Gallon") 
+g <- g + labs(title = title)
+print(g)
+```
+
