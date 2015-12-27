@@ -23,6 +23,9 @@ The result for the selected data is shown in the main panel on the right side.
 The mean for weight and MPG is calculated for the selected data and a plot is also shown for this data.
 A table shows the data for all the observations that meet the selection you chose.
 
-Source code for the project is available on the [GitHub](https://github.com/scatalina5/09_DevelopingDataProducts)
+The MTCARS Data Explorer shiny app is available at [Rstudio's shiny server](https://scatalina5.shinyapps.io/09_DevelopingDataProducts)
+
+The source code for the project is available on the [GitHub](https://github.com/scatalina5/09_DevelopingDataProducts)
 
 The presentation for the project is available on the [GitHub](http://scatalina5.github.io/09_DevelopingDataProducts-project.html#/)
+
