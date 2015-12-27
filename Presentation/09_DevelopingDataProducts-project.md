@@ -1,8 +1,10 @@
 Developing Data Products - Course Project
 =====================
 author: Peter Seidel  
-date: Sat Dec 26 23:50:03 2015  
+date: Sun Dec 27 00:19:12 2015  
 transition: rotate
+
+R Presenter was used for this presentation.
 
 MTCARS Explorer Application
 =====================

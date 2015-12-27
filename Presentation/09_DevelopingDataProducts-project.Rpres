@@ -4,6 +4,8 @@ author: Peter Seidel
 date: `r date()`  
 transition: rotate
 
+R Presenter was used for this presentation.
+
 MTCARS Explorer Application
 =====================
 type: sub-section
